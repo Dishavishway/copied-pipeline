@@ -1,5 +1,5 @@
 {
-	"name": "cereal_datalake",
+	"name": "tips_datalake",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "DataLake",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "cereal.csv",
+				"fileName": "tips.csv",
 				"fileSystem": "datalayer"
 			},
 			"columnDelimiter": ",",

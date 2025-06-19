@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "Toyota.csv",
 				"fileSystem": "datalayer"
 			},
 			"columnDelimiter": ",",

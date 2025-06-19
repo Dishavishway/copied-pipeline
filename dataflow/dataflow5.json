@@ -12,20 +12,46 @@
 					"name": "source5"
 				}
 			],
-			"sinks": [],
-			"transformations": [],
+			"sinks": [
+				{
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "rank1"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
-				"          CustomerID as string,",
-				"          Genre as string,",
-				"          Age as string,",
-				"          {Annual_Income_(k$)} as string,",
-				"          Spending_Score as string",
+				"          name as string,",
+				"          calories as short,",
+				"          protein as short,",
+				"          fat as short,",
+				"          sodium as short,",
+				"          fiber as double,",
+				"          carbo as double,",
+				"          sugars as short,",
+				"          potass as short,",
+				"          vitamins as short,",
+				"          shelf as short,",
+				"          weight as double,",
+				"          cups as double,",
+				"          rating as double",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: true,",
 				"     inferDriftedColumnTypes: true,",
-				"     ignoreNoFilesFound: false) ~> source5"
+				"     ignoreNoFilesFound: false) ~> source5",
+				"source5 rank(asc(fat, true),",
+				"     output(fat_rank as long)) ~> rank1",
+				"rank1 sink(validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     store: 'cache',",
+				"     format: 'inline',",
+				"     output: false,",
+				"     saveOrder: 1) ~> sink1"
 			]
 		}
 	}

@@ -1,5 +1,5 @@
 {
-	"name": "mall_copydata",
+	"name": "name_copydata",
 	"properties": {
 		"activities": [
 			{
@@ -48,20 +48,18 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "mall_git",
+						"referenceName": "name_git",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "mall_datalake",
+						"referenceName": "name_datalake",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
-		"annotations": [],
-		"lastPublishTime": "2025-06-19T10:33:03Z"
-	},
-	"type": "Microsoft.DataFactory/factories/pipelines"
+		"annotations": []
+	}
 }

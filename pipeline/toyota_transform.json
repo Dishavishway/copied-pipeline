@@ -1,9 +1,9 @@
 {
-	"name": "pipeline4",
+	"name": "toyota_transform",
 	"properties": {
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "Data flow2",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
