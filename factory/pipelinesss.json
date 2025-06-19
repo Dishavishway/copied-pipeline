@@ -1,0 +1,9 @@
+{
+	"name": "pipelinesss",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b2dd98e8-ce88-49e0-943c-eddddf7adf5e",
+		"tenantId": "3c384b5b-7961-47fd-8f4c-f11f12a03d15"
+	}
+}
