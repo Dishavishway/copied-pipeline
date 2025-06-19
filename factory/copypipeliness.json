@@ -1,0 +1,9 @@
+{
+	"name": "copypipeliness",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "03588165-c9e7-488e-af8b-cee01fa3630f",
+		"tenantId": "3c384b5b-7961-47fd-8f4c-f11f12a03d15"
+	}
+}
